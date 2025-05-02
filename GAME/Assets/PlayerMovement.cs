@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -37,5 +38,10 @@ public class PlayerMovement : MonoBehaviour
         float t = Mathf.InverseLerp(minY, maxY, transform.position.y);
         float scale = Mathf.Lerp(maxScale, minScale, t);
         transform.localScale = new Vector3(scale, scale, 1);
+
+        
     }
+
+    
+
 }
